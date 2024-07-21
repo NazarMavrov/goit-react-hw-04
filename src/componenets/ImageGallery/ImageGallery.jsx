@@ -7,15 +7,13 @@ export default function ImageGallery ({ images, onImageClick }) {
 
     return (
         <ul>
-            {images.map((image) => (
-                <li key={image.id}>
-                    <ImageCard 
-                        src={image.src} 
-                        alt={image.alt} 
-                        onClick={() => onImageClick(image)} 
-                    />
-                </li>
-            ))}
-        </ul>
+        {images.map(image => (
+            <li key={image.id} onClick={() => onImageClick(image)}>
+                <div>
+                    <img src={image.src} alt={image.alt} />
+                </div>
+            </li>
+        ))}
+    </ul>
     );
 }

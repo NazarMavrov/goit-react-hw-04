@@ -6,7 +6,7 @@ import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
 import ImageModal from '../ImageModal/ImageModal';
 
-const ACCESS_KEY = 'YOUR_ACCESS_KEY_HERE'; // Замініть це на ваш реальний Access Key
+const ACCESS_KEY = 'tc3QjkEtR7BjMjObBLv1a_Ie23kR7PIehQpF5GqZj4o';   
 
 export default function App() {
     const [images, setImages] = useState([]);
